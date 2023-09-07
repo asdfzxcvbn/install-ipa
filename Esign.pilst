@@ -11,7 +11,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://cdn.discordapp.com/attachments/1145853757901516914/1149214640262369342/ESign_4.8.2_1694064483.ipa</string>
+                    <string>https://cdn.discordapp.com/attachments/1145853757901516914/1149271396724265041/esign_4.8.1.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
@@ -19,7 +19,7 @@
                 <key>bundle-identifier</key>
                 <string>p3.xyz.yyyue.esign</string>
                 <key>bundle-version</key>
-                <string>4.8.2</string>
+                <string>4.8.1</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
