@@ -1,0 +1,31 @@
+```<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>assets</key>
+            <array>
+                <dict>
+                    <key>kind</key>
+                    <string>software-package</string>
+                    <key>url</key>
+                    <string>put ur SIGNED DIRECT link here</string>
+                </dict>
+            </array>
+            <key>metadata</key>
+            <dict>
+                <key>bundle-identifier</key>
+                <string>put the bundle id of the app here</string>
+                <key>bundle-version</key>
+                <string>put the app version here (the one in the plist, not the appstore, they dont match sometimes)</string>
+                <key>kind</key>
+                <string>software</string>
+                <key>title</key>
+                <string>put the app display name here (what shows on ur homescreen)</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>```
