@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>put ur SIGNED DIRECT link here</string>
+                    <string>https://cdn.discordapp.com/attachments/1149169782864748574/1149180035928952892/Cowabunga_10.3.2_1693996258.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>put the bundle id of the app here</string>
+                <string>com.leemin.Cowabunga</string>
                 <key>bundle-version</key>
-                <string>put the app version here (the one in the plist, not the appstore, they dont match sometimes)</string>
+                <string>10.3.2</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>put the app display name here (what shows on ur homescreen)</string>
+                <string>Cowabunga</string>
             </dict>
         </dict>
     </array>
