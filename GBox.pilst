@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://cdn.discordapp.com/attachments/1145853757901516914/1149271396724265041/esign_4.8.1.ipa</string>
-                </dict>u
+                    <string>https://cdn.discordapp.com/attachments/1145853757901516914/1149273279077564416/GBox_v4.3.1.ipa</string>
+                </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>p3.xyz.yyyue.esign</string>
+                <string>com.ncs.gbox</string>
                 <key>bundle-version</key>
-                <string>4.8.1</string>
+                <string>4.3.1</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>ESign</string>
+                <string>GBox</string>
             </dict>
         </dict>
     </array>
