@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>put link here</string>
+                    <string>https://cdn.discordapp.com/attachments/1145853757901516914/1149419980610347049/StreamVideoCallApp_1.0.6_1694113448.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>put bundle IDhere</string>
+                <string>io.getstream.iOS.VideoDemoApp</string>
                 <key>bundle-version</key>
-                <string>put App Verison</string>
+                <string>1.0.6</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>put Display</string>
+                <string>StreamVideoCallApp</string>
             </dict>
         </dict>
     </array>
