@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>put ur SIGNED DIRECT link here</string>
+                    <string>https://cdn.discordapp.com/attachments/1145853757901516914/1149197840732663849/YouTube_18.34.5_1694060434.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>put the bundle id of the app here</string>
+                <string>com.google.ios.youtube</string>
                 <key>bundle-version</key>
-                <string>put the app version here (the one in the plist, not the appstore, they dont match sometimes)</string>
+                <string>18.34.5</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>put the app display name here (what shows on ur homescreen)</string>
+                <string>YouTube</string>
             </dict>
         </dict>
     </array>
