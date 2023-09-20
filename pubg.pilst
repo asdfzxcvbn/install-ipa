@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://cdn.discordapp.com/attachments/1149169782864748574/1149180035928952892/Cowabunga_10.3.2_1693996258.ipa</string>
+                    <string>https://www.mediafire.com/file_premium/bp59l22a8l9g5i0/PUBG_MOBILE_2.8.0_1695069428.ipa/file</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.leemin.Cowabunga</string>
+                <string>pub</string>
                 <key>bundle-version</key>
-                <string>10.3.2</string>
+                <string>2.8.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>Cowabunga</string>
+                <string>PUBG MOBILE</string>
             </dict>
         </dict>
     </array>
