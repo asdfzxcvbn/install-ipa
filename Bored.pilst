@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://cdn.discordapp.com/attachments/1149169782864748574/1149180035928952892/Cowabunga_10.3.2_1693996258.ipa</string>
+                    <string>https://download1078.mediafire.com/zjkjyafzddigG2bznilNSYVYbQZvXL_hZ5Czws3IJ5i8OQiTx9rXHasTq0HXVLSBSNeUhrO1VPr6HcaoQTIPbi1Ck36KUmZ1qy9pOX0QQJU2S-cjCRN7BWMzQmXNJA3IHjFOT1JLwmM8FvOLnkHs1KC9jKydUvsjFfykZyBjGQ/p060w06gjo2yu1v/Terraria_4.4.11_1694754232.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.leemin.Cowabunga</string>
+                <string>com.505games.terraria</string>
                 <key>bundle-version</key>
-                <string>10.3.2</string>
+                <string>4.4.11</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>Cowabunga</string>
+                <string>Terraria</string>
             </dict>
         </dict>
     </array>

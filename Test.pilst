@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://cdn.discordapp.com/attachments/1149169782864748574/1149180035928952892/Cowabunga_10.3.2_1693996258.ipa</string>
+                    <string>https://drive.google.com/uc?id=1WnvQDRju855oZUVPFvc-FQIisr5t4QEn&export=download</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.leemin.Cowabunga</string>
+                <string>com.mojang.minecraftpe</string>
                 <key>bundle-version</key>
-                <string>10.3.2</string>
+                <string>1.20.15</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>Cowabunga</string>
+                <string>Minecraft</string>
             </dict>
         </dict>
     </array>
