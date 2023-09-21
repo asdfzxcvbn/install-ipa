@@ -24,7 +24,6 @@
         .navbar {
             background-color: rgba(0, 0, 0, 0.3); /* Add a transparent background to the navbar */
             position: fixed;
-            top: 0;
             width: 100%;
             z-index: 1000;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -32,6 +31,11 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            position: fixed;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px 10px 0 0;
+    }
         }
 
         /* Add a subtle shadow on scroll */
@@ -85,6 +89,8 @@
         @media screen and (max-width: 768px) {
             .navbar {
                 justify-content: space-between;
+                font-size: 14px;
+                padding: 10px;
             }
 
             .menu-icon {
