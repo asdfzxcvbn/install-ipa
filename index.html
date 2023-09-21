@@ -10,15 +10,20 @@
     <link id="favicon" rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1153889879114141806/1153900237405032459/IMG_3196.webp">
     <style>
         body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('https://i.ibb.co/4WXmDCZ/31-D95-A05-8705-4-DB9-90-C1-FBC9495795-FC.png'); /* Background image URL */
-  background-size: cover; /* Cover the entire viewport */
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Fixed background */
-  color: white; /* Text color */
+  background: radial-gradient(ellipse at center, orange, lightpink, pink, #FF2400, #FF7373);
+  animation: neon 1.5s ease-in-out infinite alternate;
+ height: 100vh
 }
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 70px lightpink, 0 0 80px lightpink, 0 0 100px lightpink, 0 0 150px pink, 0 0 170px pink, 0 0 190px pink, 0 0 220px pink, 0 0 240px #FF2400, 0 0 250px #FF2400, 0 0 280px #FF2400, 0 0 300px #FF2400, 0 0 330px #FF7373, 0 0 350px #FF7373, 0 0 370px #FF7373, 0 0 400px #FF7373;
+  }
+  100% {
+    text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 20px orange, 0 0 30px orange, 0 0 50px lightpink, 0 0 60px lightpink, 0 0 80px lightpink, 0 0 120px pink, 0 0 140px pink, 0 0 160px pink, 0 0 180px pink, 0 0 200px #FF2400, 0 0 210px #FF2400, 0 0 230px #FF2400, 0 0 250px #FF2400, 0 0 270px #FF7373, 0 0 290px #FF7373, 0 0 310px #FF7373, 0 0 330px #FF7373;
+  }
+}
+
 
 /* Create a fixed navbar with advanced styling */
 .navbar {
