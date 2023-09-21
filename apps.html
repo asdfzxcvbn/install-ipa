@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarlet Unofficial</title>
+        <link rel="stylesheet" href="https://usescarlet.com/main.css"/>
+        <link rel="stylesheet" href="https://usescarlet.com/internal/immutable/assets/_page-b961c8fc.css"/>
+  
+    <link id="favicon" rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1153889879114141806/1153900237405032459/IMG_3196.webp">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://cdn.discordapp.com/attachments/1153889879114141806/1154239900930023516/deyc41r-a5463947-264a-431b-a43f-ef4ade621619_1.png'); /* Background image URL */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Fixed background */
+            color: white; /* Text color */
+        }
+
+        /* Create a fixed navbar with advanced styling */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.3); /* Add a transparent background to the navbar */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* Add a subtle shadow on scroll */
+        .navbar.scroll {
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the background opacity on scroll */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the navbar links with smooth transitions */
+        .navbar a {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            position: relative;
+            color: white; /* Text color for the links */
+            transition: color 0.3s ease; /* Smooth text color transition */
+        }
+
+        /* Navbar links on hover */
+        .navbar a:hover {
+            color: #ff7f50; /* Change link color on hover */
+        }
+
+        /* Create a line under the active link */
+        .navbar .active-link::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #ff7f50; /* Highlight color for the active link */
+            position: absolute;
+            bottom: -5px; /* Improved positioning for the line */
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar .active-link:hover::after {
+            transform: scaleX(1); /* Expand the line on hover */
+        }
+
+        /* Responsive navigation menu */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                justify-content: space-between;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .navbar.responsive {
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: rgba(0, 0, 0, 0.7); /* Adjust the background opacity for mobile menu */
+                padding: 20px 0; /* Increased padding for mobile menu */
+            }
+
+            .navbar.responsive a {
+                display: block;
+                margin: 10px 20px;
+                font-size: 18px;
+                color: white; /* Text color for mobile links */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar" id="navbar">
+        <a href="#home" class="active-link">Home</a>
+        <a href="about scarlet unofficial.html" class="active-link">About</a>
+        <a href="apps.html" class="active-link">Apps</a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> 
+    </div>
+
+    <!-- Content -->
+    <div style="margin-top: 80px; padding: 20px;">
+        <!-- Your page content goes here -->
+
+      
+        <!-- Add your content here -->
+    </div>
+
+    <!-- JavaScript for responsive menu -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById("navbar");
+            navbar.classList.toggle("responsive");
+        }
+
+        // Add scroll event listener to change navbar style on scroll
+        window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scroll");
+            } else {
+                navbar.classList.remove("scroll");
+            }
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading Box</title>
+    <style>
+        /* Center the box both horizontally and vertically */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Add a background color */
+        }
+
+        /* Container for the boxes */
+        .box-container-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Styles for the container */
+        .box-container {
+            width: 100%; /* Full width on mobile devices */
+            max-width: 300px; /* Limit maximum width */
+            background: url('https://cdn.discordapp.com/attachments/1153889879114141806/1154239900930023516/deyc41r-a5463947-264a-431b-a43f-ef4ade621619_1.png'); /* Set your image URL here */
+            background-size: cover;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 15px; /* Increased border radius */
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            margin: 10px auto; /* Center horizontally and add margin for spacing */
+        }
+
+        /* Styles for the image */
+        .box-image {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            border-radius: 15px; /* Add border radius to the image */
+        }
+
+        /* Styles for the title */
+        .box-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: white; /* Text color */
+        }
+
+        /* Styles for the description */
+        .box-description {
+            font-size: 14px;
+            color: #ccc; /* Text color */
+            margin-bottom: 10px;
+        }
+
+        /* Styles for the ">" icon */
+        .box-link {
+            font-size: 24px;
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            transition: right 0.3s ease-in-out;
+            color: white; /* Text color */
+        }
+
+        /* Hover effect */
+        .box-container:hover {
+            background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+        }
+
+        /* Adjust the ">" icon position on hover */
+        .box-container:hover .box-link {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for the boxes -->
+    <div class="box-container-wrapper">
+        <!-- Box 1 - PhotoMath -->
+        <a href="itms-services://?action=download-manifest&url=https://daisuke1227.github.io/Scarlet-web-unofficial/Photomath.plist" class="box-container">
+            <img class="box-image" src="https://cdn.discordapp.com/attachments/1153889879114141806/1154251636613582858/IMG_3245.png" alt="Image">
+            <div class="box-text">
+                <div class="box-title">PhotoMath+</div>
+                <div class="box-description">Photomath but better</div>
+            </div>
+            <div class="box-link">&gt;</div>
+        </a>
+        
+        <!-- Box 2 - Minecraft -->
+        <a href="itms-services://?action=download-manifest&url=https://daisuke1227.github.io/Scarlet-web-unofficial/Minecraft.plist" class="box-container">
+            <img class="box-image" src="https://cdn.discordapp.com/attachments/1153889879114141806/1154257585025863690/IMG_3249.png" alt="Image">
+            <div class="box-text">
+                <div class="box-title">Minecraft Free</div>
+                <div class="box-description">Minecraft but free</div>
+            </div>
+            <div class="box-link">&gt;</div>
+        </a>
+
+        <!-- Box 3 - Tiktok -->
+        <a href="itms-services://?action=download-manifest&url=https://daisuke1227.github.io/Scarlet-web-unofficial/TikTok.plist" class="box-container">
+            <img class="box-image" src="https://cdn.discordapp.com/attachments/1153889879114141806/1154257863741558864/IMG_3252.png" alt="Image">
+            <div class="box-text">
+                <div class="box-title">Tiktok</div>
+                <div class="box-description">Tiktok With Modded Features </div>
+            </div>
+            <div class="box-link">&gt;</div>
+        </a>
+
+        <!-- Box 4 - Twitter -->
+        <a href="itms-services://?action=download-manifest&url=https://daisuke1227.github.io/Scarlet-web-unofficial/Twitter.plist" class="box-container">
+            <img class="box-image" src="https://cdn.discordapp.com/attachments/1153889879114141806/1154257765800357968/IMG_3251.png" alt="Image">
+            <div class="box-text">
+                <div class="box-title">Twitter/X</div>
+                <div class="box-description">Twitter/X With Modded Features </div>
+            </div>
+            <div class="box-link">&gt;</div>
+        </a>
+
+        <!-- Box 5 - Youtube -->
+        <a href="itms-services://?action=download-manifest&url=https://daisuke1227.github.io/Scarlet-web-unofficial/YouTube.plist" class="box-container">
+            <img class="box-image" src="https://cdn.discordapp.com/attachments/1153889879114141806/1154257690239979543/IMG_3250.png" alt="Image">
+            <div class="box-text">
+                <div class="box-title">Youtube</div>
+                <div class="box-description">Youtube With Modded Features </div>
+            </div>
+            <div class="box-link">&gt;</div>
+        </a>
+    </div>
+
+    <script>
+        // Fade in the boxes when the page loads
+        window.addEventListener('load', function() {
+            const boxes = document.querySelectorAll('.box-container');
+            boxes.forEach(function(box) {
+                box.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>

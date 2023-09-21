@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarlet Unofficial</title>
+    <link id="favicon" rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1153889879114141806/1153900237405032459/IMG_3196.webp">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://cdn.discordapp.com/attachments/1153889879114141806/1154239900930023516/deyc41r-a5463947-264a-431b-a43f-ef4ade621619_1.png'); /* Background image URL */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Fixed background */
+            color: white; /* Text color */
+        }
+
+        /* Create a fixed navbar with advanced styling */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.3); /* Add a transparent background to the navbar */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* Add a subtle shadow on scroll */
+        .navbar.scroll {
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the background opacity on scroll */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the navbar links with smooth transitions */
+        .navbar a {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            position: relative;
+            color: white; /* Text color for the links */
+            transition: color 0.3s ease; /* Smooth text color transition */
+        }
+
+        /* Navbar links on hover */
+        .navbar a:hover {
+            color: #ff7f50; /* Change link color on hover */
+        }
+
+        /* Create a line under the active link */
+        .navbar .active-link::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #ff7f50; /* Highlight color for the active link */
+            position: absolute;
+            bottom: -5px; /* Improved positioning for the line */
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar .active-link:hover::after {
+            transform: scaleX(1); /* Expand the line on hover */
+        }
+
+        /* Responsive navigation menu */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                justify-content: space-between;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .navbar.responsive {
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: rgba(0, 0, 0, 0.7); /* Adjust the background opacity for mobile menu */
+                padding: 20px 0; /* Increased padding for mobile menu */
+            }
+
+            .navbar.responsive a {
+                display: block;
+                margin: 10px 20px;
+                font-size: 18px;
+                color: white; /* Text color for mobile links */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar" id="navbar">
+        <a href="#home" class="active-link">Home</a>
+        <a href="about scarlet unofficial.html" class="active-link">About</a>
+        <a href="apps.html" class="active-link">Apps</a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </div>
+
+    <!-- Content -->
+    <div style="margin-top: 80px; padding: 20px;">
+        <!-- Your page content goes here -->
+        <h1>About Scarlet Unofficial</h1>
+        <p>Welcome to Scarlet Unofficial, your destination for enhanced digital experiences. At Scarlet Unofficial, our mission is to provide you with tweaked apps and exclusive content that unlock the full potential of your devices. We take your favorite apps to the next level. Why Scarlet Unofficial? Tweaked Apps: Discover popular apps with added features and customization options. Exclusive Content: Access unique content and features that enhance your digital world. User-Friendly: Our user-friendly platform ensures effortless exploration. Community: Join a vibrant community of tech enthusiasts. Join us on this exciting journey, where innovation knows no bounds. Your digital adventure starts here. Welcome to Scarlet Unofficial!</p>
+        <!-- Add your content here -->
+    </div>
+
+    <!-- JavaScript for responsive menu -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.getElementById("navbar");
+            navbar.classList.toggle("responsive");
+        }
+
+        // Add scroll event listener to change navbar style on scroll
+        window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scroll");
+            } else {
+                navbar.classList.remove("scroll");
+            }
+        });
+    </script>
+</body>
+</html>
