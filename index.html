@@ -10,120 +10,117 @@
     <link id="favicon" rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1153889879114141806/1153900237405032459/IMG_3196.webp">
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('https://i.ibb.co/4WXmDCZ/31-D95-A05-8705-4-DB9-90-C1-FBC9495795-FC.png'); /* Background image URL */
-            background-size: cover; /* Cover the entire viewport */
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Fixed background */
-            color: white; /* Text color */
-            height: 100vh
-        }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://i.ibb.co/4WXmDCZ/31-D95-A05-8705-4-DB9-90-C1-FBC9495795-FC.png'); /* Background image URL */
+  background-size: cover; /* Cover the entire viewport */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fixed background */
+  color: white; /* Text color */
+}
 
-        /* Create a fixed navbar with advanced styling */
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.3); /* Add a transparent background to the navbar */
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            position: fixed;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 10px 10px 0 0;
-    }
-        }
+/* Create a fixed navbar with advanced styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3); /* Add a transparent background to the navbar */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px 10px 0 0;
+}
 
-        /* Add a subtle shadow on scroll */
-        .navbar.scroll {
-            background-color: rgba(0, 0, 0, 0.7); /* Adjust the background opacity on scroll */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+/* Add a subtle shadow on scroll */
+.navbar.scroll {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the background opacity on scroll */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        /* Style the navbar links with smooth transitions */
-        .navbar a {
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
-            position: relative;
-            color: white; /* Text color for the links */
-            transition: color 0.3s ease; /* Smooth text color transition */
-            display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        }
+/* Style the navbar links with smooth transitions */
+.navbar a {
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  position: relative;
+  color: white; /* Text color for the links */
+  transition: color 0.3s ease; /* Smooth text color transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        /* Navbar links on hover */
-        .navbar a:hover {
-            color: #ff7f50; /* Change link color on hover */
-        }
+/* Navbar links on hover */
+.navbar a:hover {
+  color: #ff7f50; /* Change link color on hover */
+}
 
-        /* Create a line under the active link */
-        .navbar .active-link::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 3px;
-            background-color: #ff7f50; /* Highlight color for the active link */
-            position: absolute;
-            bottom: -5px; /* Improved positioning for the line */
-            left: 0;
-            transform: scaleX(0);
-            transform-origin: center;
-            transition: transform 0.3s ease;
-        }
+/* Create a line under the active link */
+.navbar .active-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ff7f50; /* Highlight color for the active link */
+  position: absolute;
+  bottom: -5px; /* Improved positioning for the line */
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
 
-        .navbar .active-link:hover::after {
-            transform: scaleX(1); /* Expand the line on hover */
-        }
+.navbar .active-link:hover::after {
+  transform: scaleX(1); /* Expand the line on hover */
+}
 
-        /* Responsive navigation menu */
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-            font-size: 24px;
-            color: white;
-        }
+/* Responsive navigation menu */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
 
-        @media screen and (max-width: 768px) {
-            .navbar {
-                justify-content: space-between;
-                font-size: 14px;
-                padding: 10px;
-            }
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 10px;
+  }
 
-            .menu-icon {
-                display: block;
-            }
+  .menu-icon {
+    display: block;
+  }
 
-            .navbar.responsive {
-                flex-direction: column;
-                align-items: flex-start;
-                background-color: rgba(0, 0, 0, 0.7); /* Adjust the background opacity for mobile menu */
-                padding: 20px 0; /* Increased padding for mobile menu */
-            }
+  .navbar.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the background opacity for mobile menu */
+    padding: 20px 0; /* Increased padding for mobile menu */
+  }
 
-            .navbar.responsive a {
-                display: block;
-                margin: 10px 20px;
-                font-size: 18px;
-                color: white; /* Text color for mobile links */
-            }
-        }
+  .navbar.responsive a {
+    display: block;
+    margin: 10px 20px;
+    font-size: 18px;
+    color: white; /* Text color for mobile links */
+  }
+}
+
     </style>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar" id="navbar">
-        <a href="https://scarlet-web-unofficial.studioslol.repl.co/index.html" class="active-link">Home</a>
-        <a href="https://scarlet-web-unofficial.studioslol.repl.co/about scarlet unofficial.html" class="active-link">About</a>
-        <a href="https://scarlet-web-unofficial.studioslol.repl.co/apps.html" class="active-link">Apps</a>
+        <a href="https://daisuke1227.github.io/Daisuke-s-Revamped/" class="active-link">Home</a>
+        <a href="https://daisuke1227.github.io/Daisuke-s-Revamped/apps.html" class="active-link">Apps</a>
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> 
     </div>
 
